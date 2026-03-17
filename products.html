@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | CLARITY VISION CARE PVT. LTD.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">👁</div>
+                <div class="nav-logo-text">CLARITY VISION<span>Care Pvt. Ltd.</span></div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html" class="active-link">Products</a></li>
+                <li><a href="quality.html">Quality</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html" class="btn btn-primary nav-cta">Contact Us</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="section-label">💧 Our Products</div>
+                <h1 class="page-hero-title">Premium Eye Care Solutions</h1>
+                <p class="page-hero-subtitle">Discover our comprehensive range of ophthalmic products, formulated with precision to address various eye care needs.</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> <span>/</span> <span class="current">Products</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="products section-padding">
+        <div class="container">
+            <div class="products-filter animate-on-scroll">
+                <button class="filter-btn active" onclick="filterProducts('all')">All Products</button>
+                <button class="filter-btn" onclick="filterProducts('antibiotic')">Antibiotic</button>
+                <button class="filter-btn" onclick="filterProducts('lubricant')">Lubricating</button>
+                <button class="filter-btn" onclick="filterProducts('combination')">Combination</button>
+                <button class="filter-btn" onclick="filterProducts('supplement')">Supplement</button>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1: KRISMOX -->
+                <div class="product-card animate-on-scroll" data-category="antibiotic">
+                    <div class="product-badge">Bestseller</div>
+                    <div class="product-image">
+                        <img src="img/KRISMOX Eye Drop.png" alt="KRISMOX Eye Drop" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Antibiotic Eye Drop</div>
+                        <h3 class="product-name">KRISMOX Eye Drop</h3>
+                        <p class="product-description">Potent fluoroquinolone antibiotic eye drops for bacterial conjunctivitis and ocular infections.</p>
+                        <div class="product-benefits">
+                            <span class="benefit-tag">Broad Spectrum</span>
+                            <span class="benefit-tag">Fast Acting</span>
+                            <span class="benefit-tag">Well Tolerated</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-mrp">MRP ₹120</span>
+                            <button class="product-detail-btn" onclick="openModal(0)">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: KRISMOX T -->
+                <div class="product-card animate-on-scroll" data-category="combination">
+                    <div class="product-badge">Popular</div>
+                    <div class="product-image">
+                        <img src="img/KRISMOX T Eye Drop.png" alt="KRISMOX T Eye Drop" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Combination Antibiotic</div>
+                        <h3 class="product-name">KRISMOX T Eye Drop</h3>
+                        <p class="product-description">Dual-action antibiotic combining Moxifloxacin and Tobramycin for enhanced coverage.</p>
+                        <div class="product-benefits">
+                            <span class="benefit-tag">Dual Antibiotic</span>
+                            <span class="benefit-tag">Enhanced Spectrum</span>
+                            <span class="benefit-tag">Synergistic</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-mrp">MRP ₹140</span>
+                            <button class="product-detail-btn" onclick="openModal(1)">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: CLERTEAR -->
+                <div class="product-card animate-on-scroll" data-category="lubricant">
+                    <div class="product-badge">Essential</div>
+                    <div class="product-image">
+                        <img src="img/CLERTEAR Eye Drop.png" alt="CLERTEAR Eye Drop" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Lubricating Eye Drop</div>
+                        <h3 class="product-name">CLERTEAR Eye Drop</h3>
+                        <p class="product-description">Advanced lubricating formula with CMC Sodium for instant moisture and comfort.</p>
+                        <div class="product-benefits">
+                            <span class="benefit-tag">Instant Relief</span>
+                            <span class="benefit-tag">Long Lasting</span>
+                            <span class="benefit-tag">Gentle Formula</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-mrp">MRP ₹130</span>
+                            <button class="product-detail-btn" onclick="openModal(2)">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: CLERTEAR GEL -->
+                <div class="product-card animate-on-scroll" data-category="lubricant">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-image">
+                        <img src="img/CLERTEAR GEL Eye Drop.png" alt="CLERTEAR GEL Eye Drop" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Lubricating Gel Eye Drop</div>
+                        <h3 class="product-name">CLERTEAR GEL Eye Drop</h3>
+                        <p class="product-description">High-viscosity gel-based lubricant with CMC 1% for severe dry eyes.</p>
+                        <div class="product-benefits">
+                            <span class="benefit-tag">Gel Formula</span>
+                            <span class="benefit-tag">Overnight Use</span>
+                            <span class="benefit-tag">Severe Dry Eye</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-mrp">MRP ₹170</span>
+                            <button class="product-detail-btn" onclick="openModal(3)">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: KRISMOX KT -->
+                <div class="product-card animate-on-scroll" data-category="combination">
+                    <div class="product-image">
+                        <img src="img/KRISMOX KT Eye Drop.png" alt="KRISMOX KT Eye Drop" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Antibiotic + NSAID</div>
+                        <h3 class="product-name">KRISMOX KT Eye Drop</h3>
+                        <p class="product-description">Moxifloxacin + Ketorolac combination for post-operative care and infected inflammatory conditions.</p>
+                        <div class="product-benefits">
+                            <span class="benefit-tag">Anti-Infective</span>
+                            <span class="benefit-tag">Anti-Inflammatory</span>
+                            <span class="benefit-tag">Post-Op Care</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-mrp">MRP ₹130</span>
+                            <button class="product-detail-btn" onclick="openModal(4)">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: GATRITY -->
+                <div class="product-card animate-on-scroll" data-category="antibiotic">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="img/GATRITY Eye Drop.png" alt="GATRITY Eye Drop" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Antibiotic Eye Drop</div>
+                        <h3 class="product-name">GATRITY Eye Drop</h3>
+                        <p class="product-description">Fourth-generation fluoroquinolone with Gatifloxacin for superior ocular penetration.</p>
+                        <div class="product-benefits">
+                            <span class="benefit-tag">4th Gen Quinolone</span>
+                            <span class="benefit-tag">Deep Penetration</span>
+                            <span class="benefit-tag">Dual Mechanism</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-mrp">MRP ₹140</span>
+                            <button class="product-detail-btn" onclick="openModal(5)">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7: CLERTEAR ULTRA -->
+                <div class="product-card animate-on-scroll" data-category="lubricant">
+                    <div class="product-badge">Ultra</div>
+                    <div class="product-image">
+                        <img src="img/CLERTEAR ULTRA Eye Drop.png" alt="CLERTEAR ULTRA Eye Drop" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Advanced Lubricating Drop</div>
+                        <h3 class="product-name">CLERTEAR ULTRA Eye Drop</h3>
+                        <p class="product-description">Premium dual-polymer formula with PEG 400 and Propylene Glycol for advanced dry eye therapy.</p>
+                        <div class="product-benefits">
+                            <span class="benefit-tag">Dual Polymer</span>
+                            <span class="benefit-tag">Advanced Formula</span>
+                            <span class="benefit-tag">Superior Comfort</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-mrp">MRP ₹240</span>
+                            <button class="product-detail-btn" onclick="openModal(6)">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8: KRISTIGEM CAPSULE -->
+                <div class="product-card animate-on-scroll" data-category="supplement">
+                    <div class="product-badge">Nutraceutical</div>
+                    <div class="product-image" style="background:linear-gradient(135deg,#FFF3E0,#FFE0B2);">
+                        <img src="img/KRISTIGEM Capsule.png" alt="KRISTIGEM Capsule" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Eye Health Supplement</div>
+                        <h3 class="product-name">KRISTIGEM Capsule</h3>
+                        <p class="product-description">Comprehensive eye nutrition with Omega-3, Lutein, Zeaxanthin & Astaxanthin for overall eye health.</p>
+                        <div class="product-benefits">
+                            <span class="benefit-tag">Omega-3 Rich</span>
+                            <span class="benefit-tag">Lutein + Zeaxanthin</span>
+                            <span class="benefit-tag">Antioxidant</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-mrp">MRP ₹220/strip</span>
+                            <button class="product-detail-btn" onclick="openModal(7)">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2>Need Product Information?</h2>
+                <p>Contact our team for detailed product information, samples, or distribution partnership opportunities.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-btn-white">📞 Contact Us</a>
+                    <a href="quality.html" class="cta-btn-outline">Quality Standards →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>👁 CLARITY VISION CARE</h3>
+                    <p>A trusted pharmaceutical company dedicated to developing and manufacturing premium ophthalmic products.</p>
+                    <div class="footer-social"><a href="#">f</a><a href="#">𝕏</a><a href="#">in</a><a href="#">◎</a></div>
+                </div>
+                <div class="footer-column"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="quality.html">Quality</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-column"><h4>Products</h4><ul><li><a href="products.html">KRISMOX Eye Drop</a></li><li><a href="products.html">CLERTEAR Eye Drop</a></li><li><a href="products.html">CLERTEAR GEL</a></li><li><a href="products.html">GATRITY Eye Drop</a></li><li><a href="products.html">KRISTIGEM Capsule</a></li></ul></div>
+                <div class="footer-column"><h4>Contact Info</h4><ul><li><a href="mailto:trivedianrudha@gmail.com">📧 trivedianrudha@gmail.com</a></li><li><a href="tel:+918299158688">📱 +91 8299158688</a></li><li><a href="contact.html">📍 Manohar Nagar, Yashoda Nagar, Kidwai Nagar, Kanpur - 208011</a></li></ul></div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 CLARITY VISION CARE PVT. LTD. All rights reserved.</p>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Sitemap</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PRODUCT MODAL -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div></div>
+                <button class="modal-close" onclick="closeModal()">✕</button>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>

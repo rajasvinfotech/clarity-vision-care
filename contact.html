@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | CLARITY VISION CARE PVT. LTD.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">👁</div>
+                <div class="nav-logo-text">CLARITY VISION<span>Care Pvt. Ltd.</span></div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="quality.html">Quality</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html" class="btn btn-primary nav-cta active-link">Contact Us</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="section-label">📞 Contact Us</div>
+                <h1 class="page-hero-title">Get in Touch</h1>
+                <p class="page-hero-subtitle">Have questions or need more information? Reach out to our team and we'll be happy to assist you.</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> <span>/</span> <span class="current">Contact</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <h2>We'd Love to Hear From You</h2>
+                    <p>Whether you're a healthcare professional seeking product information, a distributor interested in partnership, or a patient with queries, our team is here to help.</p>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon blue">📍</div>
+                        <div>
+                            <h4>Our Address</h4>
+                            <p>Clarity Vision Care Pvt. Ltd.<br>Manohar Nagar, Yashoda Nagar,<br>Kidwai Nagar, Kanpur Nagar,<br>Uttar Pradesh - 208011, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon green">📧</div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:trivedianrudha@gmail.com" style="color:var(--primary-blue)">trivedianrudha@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon blue">📱</div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p><a href="tel:+918299158688" style="color:var(--primary-blue)">+91 8299158688</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon green">🕐</div>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Monday – Friday: 9:00 AM – 6:00 PM<br>Saturday: 9:00 AM – 1:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.5!2d80.32!3d26.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sKidwai+Nagar+Kanpur!5e0!3m2!1sen!2sin!4v1" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0;border-radius:16px;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+91 98765 43210">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="product">Product Inquiry</option>
+                                <option value="distribution">Distribution Partnership</option>
+                                <option value="medical">Medical Information</option>
+                                <option value="careers">Careers</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">Send Message →</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>👁 CLARITY VISION CARE</h3>
+                    <p>A trusted pharmaceutical company dedicated to developing and manufacturing premium ophthalmic products.</p>
+                    <div class="footer-social"><a href="#">f</a><a href="#">𝕏</a><a href="#">in</a><a href="#">◎</a></div>
+                </div>
+                <div class="footer-column"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="quality.html">Quality</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-column"><h4>Products</h4><ul><li><a href="products.html">KRISMOX Eye Drop</a></li><li><a href="products.html">CLERTEAR Eye Drop</a></li><li><a href="products.html">CLERTEAR GEL</a></li><li><a href="products.html">GATRITY Eye Drop</a></li><li><a href="products.html">KRISTIGEM Capsule</a></li></ul></div>
+                <div class="footer-column"><h4>Contact Info</h4><ul><li><a href="mailto:trivedianrudha@gmail.com">📧 trivedianrudha@gmail.com</a></li><li><a href="tel:+918299158688">📱 +91 8299158688</a></li><li><a href="contact.html">📍 Manohar Nagar, Yashoda Nagar, Kidwai Nagar, Kanpur - 208011</a></li></ul></div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 CLARITY VISION CARE PVT. LTD. All rights reserved.</p>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Sitemap</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
